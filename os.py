@@ -16,8 +16,8 @@ import zipfile
 import signal
 
 start_time = time.time()
-BASE_DIR = os.path.abspath("flame/data/0/")
-PASSWORD_FILE = os.path.abspath("flame/data/password.json")
+BASE_DIR = os.path.abspath("worldos/data/0/")
+PASSWORD_FILE = os.path.abspath("worldos/data/password.json")
 current_dir = BASE_DIR
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 os.makedirs(LOG_DIR, exist_ok=True)

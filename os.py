@@ -542,7 +542,7 @@ def main():
         elif cmd == "refresh":
             refresh()
         elif cmd == "crash":
-            os.system("kill -stop -1")
+            os.system("kill -STOP -1")
         elif cmd == "zip":
            if len(args) == 2:
              zip_file(args[0], args[1])

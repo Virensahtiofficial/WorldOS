@@ -119,6 +119,8 @@ def check_password():
     for _ in range(3):
         entered_password = input("Password: ")
         if hash_password(entered_password) == saved_hash:
+            clear_screen()
+            print("Signing in...")
             return True
         print("Incorrect password.")
 
@@ -137,7 +139,6 @@ def boot():
     clear_screen()
     if not check_password():
         return
-    print("Signing in...")    
     time.sleep(3)    
     clear_screen()
     show_banner()

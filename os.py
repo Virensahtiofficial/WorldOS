@@ -16,8 +16,8 @@ import zipfile
 import signal
 
 start_time = time.time()
-BASE_DIR = os.path.abspath("worldos/data/0/")
-PASSWORD_FILE = os.path.abspath("worldos/data/password.json")
+BASE_DIR = os.path.abspath("data/0/")
+PASSWORD_FILE = os.path.abspath("data/password.json")
 current_dir = BASE_DIR
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -401,9 +401,9 @@ def search_files(name):
 def random_number():
     print(random.randint(1, 100))
 def shell():
-    os.system("python3 worldos/shell.py")
+    os.system("python3 shell.py")
 def update():
-    os.system("python worldos/updater.py")
+    os.system("python3 updater.py")
     
 def list_processes():
     os.system("ps aux")
@@ -427,7 +427,7 @@ def log_system_info():
         f.write(f"Uptime: {time.time() - start_time} seconds\n")
 
 def find(filename):
-    os.system(f"find / -name worldos/data/0/{filename}")
+    os.system(f"find / -name data/0/{filename}")
     
 def view_logs():
     log_file = os.path.join(LOG_DIR, "system_info.txt")

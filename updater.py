@@ -38,7 +38,7 @@ except requests.RequestException as e:
     clear_console()
     print(f"Update failed")
     time.sleep(2)
-    os.system(f"python {bestand_pad}")
+    os.system(f"python3 {bestand_pad}")
 
 # Update voltooid
 clear_console()

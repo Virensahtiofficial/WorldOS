@@ -46,4 +46,4 @@ print("Restarting...")
 time.sleep(8)
 
 # Start OS opnieuw
-os.system(f"python {bestand_pad}")
+os.system(f"python3 {bestand_pad}")

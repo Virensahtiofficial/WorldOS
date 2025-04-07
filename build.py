@@ -61,4 +61,4 @@ print("Starting...")
 time.sleep(12)
 
 # Start OS opnieuw
-os.system(f"python {os.path.join(doelmap, 'os.py')}")
+os.system(f"python3 {os.path.join(doelmap, 'os.py')}")

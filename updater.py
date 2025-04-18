@@ -5,7 +5,7 @@ import requests
 
 # Instellingen
 url = "https://raw.githubusercontent.com/Virensahtiofficial/WorldOS/refs/heads/main/os.py"
-doelmap = "worldos"
+doelmap = "."
 bestand_naam = "os.py"
 bestand_pad = os.path.join(doelmap, bestand_naam)
 

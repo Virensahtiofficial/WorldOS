@@ -9,7 +9,7 @@ url3 = "https://raw.githubusercontent.com/Virensahtiofficial/WorldOS/refs/heads/
 
 pip_packages = ["requests", "tqdm", "beautifulsoup4", "sympy"]
 
-doelmap = "worldos"
+doelmap = "."
 pip_download_dir = os.path.join(doelmap, "data", "0", "pip_packages")  # Pip-bestanden opslaan in flame/data/0
 
 bestanden = {
